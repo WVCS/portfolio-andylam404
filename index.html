@@ -2,7 +2,44 @@
 <html>
   <head>
     <title> Hello World </title>
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+	<style>
+	html, body{
+  margin: 0;
+}
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position:fixed;
+  overflow: hidden;
+  background-color: #66CCFF ;
+  top: 0;
+  font-size: 30px;
+  z-index: 1;
+  animation: myMove 12s infinite;
+}
+li.nav {
+  float: left;
+  background-color: #66CCFF;
+  display: inline;
+  z-index: 1;
+    animation: myMove 12s infinite;
+}
+li a {
+  display:block;
+  text-decoration:none;
+  padding: 12px 15px;
+  color: white;
+}
+
+li a:hover {
+  background-color: firebrick;
+}
+	</style>
     <body>
       <!-- Nav Bar Start -->
   <ul class="nav" id="cssAni">
