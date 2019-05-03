@@ -1,7 +1,31 @@
 body {
   margin: 40px;
 }
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position:fixed;
+  overflow: hidden;
+  background-color: crimson;
+  top: 0;
+}
+li.nav {
+  float: left;
+  background-color: crimson;
+  display: inline;
+}
+li a {
+  display:block;
+  text-decoration:none;
+  padding: 12px 15px;
+  color: white;
+}
 
+li a:hover {
+  background-color: firebrick;
+}
 .sidebar {
 		grid-area: sidebar;
 	}
