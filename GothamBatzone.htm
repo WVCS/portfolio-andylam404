@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <title>GothamBatzone</title>
+  <meta charset="utf-8">
+ <link rel="icon" href="Images/OGBATLogo.png">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background-color:white;
+	background-image:url("Images/Batman.png");
+	background-repeat: repeat;
+	background-size: 500px;}
+h1{ 
+	background-color:Black;
+	color:yellow;
+	border: medium groove yellow;
+	padding: 25px;
+	text-align: center;
+	letter-spacing: 4px;
+	text-shadow: 3px 2px darkslategray;
+	}
+p{
+	color:yellow;
+	text-align:center;
+	font-family: helvetica, sans-serif;
+	border: 7px dotted white;
+	}
+h1.food{
+	color:gold;
+	font-size: 125%;
+	border:12px dashed yellow;
+	}
+h1.title{
+	color:yellow;
+	font-size: 200%;
+	border:10px solid yellow;
+	z-index:1;
+	}
+div{
+	background-color: black;
+	border: 25px solid lightgrey;
+	padding 25px;
+	}
+.img-container {
+	float: left;
+	width: 20%;
+	padding: 1px;
+	text-align:center;
+}
+
+* {
+	box-sizing: border-box;
+}
+.box{
+	float: left;
+	width: 50%;
+	padding 50px;
+	height: 300px;
+	border: 25px solid slategray;
+}
+div.sticky{
+	position: sticky;
+	padding: 5px;
+	top: 0px;
+	border: 3px solid black;
+}
+#mySlides {display:none;}
+}
+</style>
+<body>
+<div class="sticky"> <h1 class="title"> <b>GothamBatzone</b></h1>  </div>
+<div class="w3-content w3-display-container" >
+  <img class="mySlides" src="Images/GothamZoneLogo.png" style="width:100%; height: 600px">
+  <img class="mySlides" src="Images/Batpark.webp" style="width:100%; height: 600px">
+    <!---->
+  <img class="mySlides" src="Images/Dark Knight_The Ride.webp" style="width:100%; height: 600px">
+  <img class="mySlides" src="Images/BatRC.jpg" style="width:100%; height: 600px">
+  <!---->
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<!--taken from w3 schools-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<p style= "text-align:center;">Gotham: A city shrouded in darkness, crowded with the most notorious criminals
+ in history and protected by a tortured anti-hero.<br>
+Batman’s fictional home is just one of several areas that’ll be part of The Gotham Batzone. 
+Gotham Batzone is a brand new theme park that opens this summer in California. It will
+show a glimpse of the world of Batman. </p>
+<div>
+<h1> Batman: Knight Flight</h1>
+<p> The highlight is going to be a ride called “Batman: Knight Flight,”
+ which takes guests on a trip into the Batcave and then on a twisty, turny,
+ appropriately dark ride as they test Batman’s new “ultimate urban patrol vehicle.” </p>
+</div>
+<h1> The Batcave Museum</h1>
+<p> A time line for all the batman movies, and props.</p>
+<h1> Joker's Funhouse</h1>
+<p> A Joker related funhouse in which people will encounter and actively interact with various devices designed
+ to surprise, challenge, and amuse the visitor. </p>
+<h1> Hall of Doom</h1>
+<p> An interactive 3D show with a tour of Wayne Towers and a 
+	performance from the Flying Graysons! </p>
+<h1> Scarecrow Scare Raid</h1>
+<p> A thrilling water roller coaster which will have jump scares.</p>
+<h1> Riddler Revolution</h1>
+<p> A 100ft. Ferris wheel which is fun for sight-seeing. </p>
+<div class="box" style="background-color:grey">
+<h1> Arkham Cafe</h1>
+<p> Coffee Cafe that has the Nightwing expresso! </p>
+</div>
+<div class="box" style="background-color:midnightblue">
+<h1> Mr. Freeze Ice Scream Truck</h1>
+<p> A stop-and-go truck which will serve special frozen shaved ice cream!</p>
+</div>
+<h1 class="food"> FOOD HERE IS GREAT </h1>
+
+</body>
+
+</html>
