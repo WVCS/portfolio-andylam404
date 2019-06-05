@@ -140,7 +140,7 @@ img.self{
 }
 @keyframes myMove{
   from {background-color: #00b081;}
-  to {background-color:  #003399;}
+  to {background-color:  #bfbfbd;}
 }
 /*flex center*/
 .flex-cen{
@@ -263,7 +263,7 @@ img.port{
 }
 #btn-bottom{
 	background: white !important;
-	border: 3px #4d5191 solid;
+	border: 3px #bfbfbd solid;
 	color: #001f3f !important;
 	font-size: 14px;
 	text-decoration: none;
