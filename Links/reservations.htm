@@ -1,0 +1,102 @@
+<!DOCTYOE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}*{font-family: Arial, Helvetica, sans-serif; 
+text-align: center;
+}
+* {box-sizing: border-box;}
+
+ul {
+  background-color: #000000;
+  color:red;
+}
+#sushi{
+height: 50px;
+}
+#myNavbar{
+float: right;
+}
+#button{
+color:black;
+}
+
+
+</style> 
+  <title>Sushi & Japanese Steakhouse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/japanese-food-8/64/japan_food_line-52-512.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style= "background-color: firebrick"; text="white">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+  <img src="../Images/AndihanaLogo.png" alt="enjoy" style="border:2;" id="sushi">
+    </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../andihana.htm">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="menu.htm">Dining Menu</a></li>
+          <li><a href="coupon.htm">Limited Time Offers</a></li>
+          <li><a href="nutritionFact.htm">Nutritional Information</a></li>
+        </ul>
+      </li>
+      <li><a href="findmeLoc.htm">Find Us</a></li>
+    </ul>
+	<form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <input type="button" onclick="window.location.href = 'search.htm';" value="Submit"/ id="button">
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="orderOnline.htm"><span class="glyphicon glyphicon-send"></span> Order Online</a></li>
+      <li><a href="reservations.htm"><span class="glyphicon glyphicon-bookmark"></span> Reservations</a></li>
+    </ul>
+  </div>
+ </div>
+</nav>
+<h1 style= "color:white"> RESERVATIONS </h1>
+<p style= "color:white"> Make a real-time online reservation at your favorite Benihana restaurant location
+ with our OpenTable® tool. Reservations are not available at all Benihana locations.
+ Please contact the Benihana location nearest you by phone for assistance. </p>
+<form action="/mailinglist.php" method="post">
+<fieldset>
+<legend style= "color:white"> Make a reservation</legend>
+<ol>
+	<li><label for "date"> Date: </label> 
+	<input type="text"
+	name="username"
+	id="date"></li>
+		<li><label for "time">
+	Time:</label>
+	<input type="text" name = "time"
+	id="time"></li>
+</ol>
+<p style= "text-align:center"> Party Size</p>
+<form>
+ <input list="party size" name="party size">
+  <datalist id="party size">
+    <option value="1">
+    <option value="2">
+    <option value="3">
+    <option value="4">
+    <option value="5">
+	<option value="6">
+  </datalist>
+<input type="button" onclick="window.location.href = 'file://dohome5/home5$/Student5/1837948/Web%20Design/Websites/Andihana/Links/resSub.htm';" value="Submit"/>
+</form>
+
+	
+</body>
+
+</html>

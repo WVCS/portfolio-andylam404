@@ -1,0 +1,87 @@
+<!DOCTYOE html>
+<html>
+
+<head>
+<style>
+body {margin:0;}*{font-family: Arial, Helvetica, sans-serif; 
+text-align: center;
+
+}
+* {box-sizing: border-box;}
+
+ul {
+  background-color: #000000;
+  color:red;
+}
+#sushi{
+height: 50px;
+}
+#myNavbar{
+float: right;
+#button{
+color:black;
+}
+</style> 
+  <title>Sushi & Japanese Steakhouse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/japanese-food-8/64/japan_food_line-52-512.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style= "background-color: firebrick"; text="white">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+  <img src="../Images/AndihanaLogo.png" alt="enjoy" style="border:2;" id="sushi">
+    </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../andihana.htm">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="menu.htm">Dining Menu</a></li>
+          <li><a href="coupon.htm">Limited Time Offers</a></li>
+          <li><a href="nutritionFact.htm">Nutritional Information</a></li>
+        </ul>
+      </li>
+      <li><a href="findmeLoc.htm">Find Us</a></li>
+    </ul>
+	<form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <input type="button" onclick="window.location.href = 'search.htm';" value="Submit"/ id="button">
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="orderOnline.htm"><span class="glyphicon glyphicon-send"></span> Order Online</a></li>
+      <li><a href="reservations.htm"><span class="glyphicon glyphicon-bookmark"></span> Reservations</a></li>
+    </ul>
+  </div>
+ </div>
+</nav>
+<h1 style = "font-family:helvetica,serif;font-size:45px;font-style:bold;color:white;"> Order Online</h1>
+<p style= "color:white"> To order online, you must place your information below. </p>
+<form action="/mailinglist.php" method="post">
+<fieldset>
+<p style= "color:white"> BECOME AN ANDIHANA MEMBER NOW! <br>In order to place a carryout, you must be signed in through your email.</p> <hr>
+<ol style= "color:black">
+	<li><label for "firstlast"> Name: </label> 
+	<input type="text" color="black"
+	name="username"
+	id="firstlast"></li>
+		<li><label for "email">
+	Email:</label>
+	<input type="text" name = "email"
+	id="email"></li>
+</ol>
+<form style= " color: black">
+<input type="button" onclick="window.location.href = 'file://dohome5/home5$/Student5/1837948/Web%20Design/Websites/Andihana/Links/formSub.htm';" value="Submit"/>
+</form>
+
+	
+</body>
+
+</html>

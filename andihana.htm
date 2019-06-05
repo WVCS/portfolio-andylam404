@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {margin:0;}*{font-family: Arial, Helvetica, sans-serif; color:white;}
+* {box-sizing: border-box;}
+
+ul {
+  background-color: #000000;
+  color:red;
+}
+#sushi{
+height: 50px;
+}
+#myNavbar{
+float: right;
+
+#mySlides {display:none;}
+}
+#button{
+color:black;
+}
+</style> 
+  <title>Sushi & Japanese Steakhouse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/japanese-food-8/64/japan_food_line-52-512.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style  = "background-color: firebrick">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+  <img src="Images/AndihanaLogo.png" alt="enjoy" style="border:2;" id="sushi">
+    </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="andihana.htm">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Links/menu.htm">Dining Menu</a></li>
+          <li><a href="Links/coupon.htm">Limited Time Offers</a></li>
+          <li><a href="Links/nutritionFact.htm">Nutritional Information</a></li>
+        </ul>
+      </li>
+      <li><a href="Links/findmeLoc.htm">Find Us</a></li>
+    </ul>
+	<form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <input type="button" onclick="window.location.href = 'Links/search.htm';" value="Submit"/ id="button">
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Links/orderOnline.htm"><span class="glyphicon glyphicon-send"></span> Order Online</a></li>
+      <li><a href="Links/reservations.htm"><span class="glyphicon glyphicon-bookmark"></span> Reservations</a></li>
+    </ul>
+  </div>
+ </div>
+</nav>
+<h1 style = "text-align: center; font-family: helvetica"> <font size:"60"; color:"white"> ANDIHANA </font></h1>
+  <p style= "text-align: center;">Sushi can be simple and fresh or deep and meaningful.</p>
+ <p  style= "text-align: center">
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="Images/sushibar.jpg" style="width:100%; height: 600px">
+    <!--https://www.nikkoatl.com/-->
+  <img class="mySlides" src="Images/sushi.jpg" style="width:100%; height: 600px">
+  <img class="mySlides" src="Images/family_dining.jpg" style="width:100%; height: 600px">
+  <!--https://www.benihana.com-->
+  <img class="mySlides" src="Images/chef.jpg" style="width:100%; height: 600px">
+    <!--https://la.eater.com/2016/10/25/13404158/urasawa-closed-rumormongering-beverly-hills-sushi-lawsuit-->
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<!--taken from w3 schools-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  <h2 style = "text-align: center; color: white"> ABOUT US </h2>
+  <p  style= "text-align: center"> Like any good story, the history of Andihana
+  begins with the descendent of a samurai warrior and a small Tokyo coffee shop.
+  Just after the war, Yunosuke Aoki (a samurai descendent and popular entertainer) 
+  decided to start a coffee shop with his wife, Katsu. Wanting to offer something
+  different than other coffee shops in the area, Yunosuke Aoki rode his bike over 
+  20 miles to purchase real sugar to serve in his shop. This flair for doing something
+  different caught the eye of his son, Hiroaki. As did the shop’s name: Andihana.
+  After college, Hiroaki (or Rocky, as he would become known) moved to the U.S. 
+  to pursue his dream of opening his own restaurant. One that combined his father’s
+  flair for doing something different with food that was truly memorable. But with
+  little money to his name, Rocky’s path was not an easy one. He started by selling
+  ice cream on the streets of Harlem while studying restaurant management at night.
+  The ice cream business turned out to be very profitable, thanks in part to the 
+  colorful Japanese cocktail umbrellas he added to the treats, and he managed to 
+  save up $10,000 for his first Andihana restaurant. With his seed money in place,
+  Rocky took out a loan and used it to start America’s first Japanese teppanyaki
+  restaurant on West 56th street. Named after his parents’ Tokyo coffee shop, Andihana
+  opened in 1964, featuring an authentic Japanese farmhouse interior and food prepared
+  on steel teppanyaki grills right in front of customers. His highly trained teppanyaki
+  chefs delighted customers with intricate knife work and theatrics. Not to mention 
+  delicious food. But it wasn’t until legendary food critic Clementine Paddleford 
+  gave Andihana a rave review that the restaurant really took off, paying for itself
+  in just six months. Soon after, Rocky opened a second Andihana in New York and
+  a third Andihana restaurant in Chicago. By 1972, there were six Andihana locations 
+  in the United States, with more opening every day. Sadly, Rocky Aoki died in 2008
+  at the age of 69. But, his legacy lives on with more than 70 Andihana restaurants
+  in the United States, Caribbean, and Central and South America, and more than 
+  100 million meals served. </p>
+<div class="container">
+</div>
+<footer>
+ <p><small><font color= "white"> Copywrite &copy; <a href = "https://www.benihana.com/"> 2019 Andihana National Corp. </a> </font></small></p>
+
+</footer>
+</body>
+</html>
