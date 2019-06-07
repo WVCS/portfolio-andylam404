@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Arctic Fox Template</title>
+	<link rel="icon" href="Images/FinalFox.png">
+  </head>
+  <body>
+	<nav>
+  <ul>
+    <li><a href="#"><img src="Images/FinalFox.png" class="logo"></a></li>
+    <li><a href="#section-1" class="section">Section 1</a></li>
+    <li><a href="#section-2" class="section">Section 2</a></li>
+    <li><a href="#section-3" class="section">Section 3</a></li>
+  </ul>
+</nav>
+
+<main>
+<div class="w3-container" id="header">
+  <h1>Header: Arctic Fox Template</h1>
+</div>
+<div class="w3-content w3-section" style="max-width:1250px">
+  <img class="mySlides w3-animate-right" src="Images/arcticfox1.jpg" alt="arctic fox" style="width:100%">
+  <img class="mySlides w3-animate-right" src="Images/arcticfox2.jpg" alt="arctic fox" style="width:100%">
+  <img class="mySlides w3-animate-right" src="Images/arcticfox3.jpg" alt="arctic fox sleeping" style="width:100%">
+  <img class="mySlides w3-animate-right" src="Images/arcticfox4.jpg" alt="arctic fox running" style="width:100%">
+</div>
+
+<h1 class="title"> Header</h1>
+<p class="content"> May 31, 2019 By: Andy Lam </p>
+  <section id="section-1">
+    <h1>Section 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+  <section id="section-2">
+    <h1>Section 2</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+  <section id="section-3">
+    <h1>Section 3</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+</main>
+
+<footer>
+  &copy;2019 Footer (Design Template Lorem Ipsum)
+  <div style="padding-left:1700px;">
+  <a class="btn" id="btn-bottom"href="#">Back To Top</a>
+  </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  <script>
+  //nav code
+
+//Start of slideshow code
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);    
+}
+  </script>
+</html>
