@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/fcbarcelonalogo.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+<title>FC Barcelona | Official Fan Page</title>
+<head>
+<style>
+body {
+  font-size: 28px;
+  background-color: #000066;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #cc0000;
+}
+
+.active {
+  background-color: maroon;
+}
+
+#mySlides {
+  display:none;
+}
+
+table {
+        font-family: helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+		color:white;
+    }
+    td, th {
+        border: 1px solid red;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even{
+        background-color:red;
+    })
+</style>
+</head>
+
+<body>
+<ul>
+  <li><img src="images/fcbarcelonalogo.png" style=width:60px; height:60px;></li>
+  <li><a class="active" href="FC Barcelona.html">Home</a></li>
+  <li><a href="websites/fcbarcelona.html">FC Barcelona</a></li>
+  <li><a href="websites/store.html">Store</a></li>
+  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Roster <span class="caret"></span></a>
+      <ul class="dropdown-content">
+		 <li><a href="websites/rosterG.html">Goalie</a></li>
+         <li><a href="websites/rosterD.html">Defenders</a></li>
+         <li><a href="websites/rosterM.html">Midfielders</a></li>
+         <li><a href="websites/rosterF.html">Forwards</a></li>
+      </ul>
+  </li>
+</ul>
+
+<div class="container"> 
+	<div style="background:maroon" class="jumbotron">
+	<h1 style="color: yellow" class="text-center"><img src="images/fcbarcelonalogo.png" style=width:120px; height:120px;>
+	FC BARCELONA </h1> 
+	</div>
+</div>
+
+<div class="w3-content w3-display-container" >
+  <img class="mySlides" src="images/fcbbackgrounds.png" style="width:100%; height: 600px">
+  <img class="mySlides" src="images/2019.jpg" style="width:100%; height: 600px">
+    <!---->
+  <img class="mySlides" src="images/teamphoto.jpg" style="width:100%; height: 600px">
+  <img class="mySlides" src="images/fcbart.jpg" style="width:100%; height: 600px">
+  <!---->
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<!--taken from w3 schools-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<img src="images/background.png" alt="Soccer Player" style="float:left; width: 500px;; height 500px;">
+    <table>
+        <tr>
+            <th>Teams</th>
+            <th> W D L</th>
+            <th> Pts.</th>
+        </tr>
+        <tr>
+            <th>Barcelona</th>
+            <th> 18 6 2</th>
+            <th> <i>60 pts. </i></th>
+        </tr>
+         <tr>
+            <th>Atletico Madrid</th>
+            <th> 15 8 3</th>
+            <th> <i>53 pts.</i></th>
+        </tr>
+         <tr>
+            <th>Real Madrid</th>
+            <th> 15 3 8</th>
+            <th> <i>48 pts.</i> </th>
+        </tr>
+         <tr>
+            <th>Getafe CF</th>
+            <th> 11 9 6
+            </th>
+            <th> <i>42 pts.</i> </th>
+        </tr>
+         <tr>
+            <th>Alaves</th>
+            <th> 11 7 8
+            </th>
+            <th> <i>40 pts.</i> </th>
+        </tr>
+        
+    </table>
+
+    <footer>
+ <p><small><font color= "white"> Copywrite &copy; <a href = "https://www.fcbarcelona.com/en/"> Barcelona Official </a> </font></small></p>
+
+</footer>
+</body>
+</html>
